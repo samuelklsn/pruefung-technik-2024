@@ -16,9 +16,5 @@ basic.forever(function () {
     }
 })
 basic.forever(function () {
-    if (input.lightLevel() < 45) {
-        pins.digitalWritePin(DigitalPin.P1, 0)
-    } else {
-        pins.digitalWritePin(DigitalPin.P1, 1)
-    }
+    pins.digitalWritePin(DigitalPin.P1, 1)
 })
